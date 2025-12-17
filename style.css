@@ -54,10 +54,14 @@ body{
 }
 .hero-content{
     padding: 120px 0px;
-    flex-basis: 50%;
+    width:50%;
+}
+.hero-content h2{
+    width: 90%;
 }
 .hero-content p{
     padding: 30px 0px;
+    width: 80%;
     font-size: 0.5rem;
     color: grey;
     line-height: 25px;
@@ -75,8 +79,9 @@ span{
     background-color: white;
 }
 .hero-image{
-   padding: 0px 120px;
-
+   /* padding: 0px 120px; */
+   width: 50%;
+    flex-basis: 50%;
 }
 /* tourist detail bar */
 .tourist-detail{
