@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabook</title>
+</head>
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- font awesome cdn link -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- css link -->
+<link rel="stylesheet" href="./style.css">
+<body>
+    <!-- trabook body for overall margin  -->
+    <div class="trabook">
+        <section class="hero-page">
+
+            <!-- nav bar justifying contents -->
+            <div class="nav">
+                <div class="nav-logo">
+                    <h4>Trabook  <img src="./logoVector.svg" alt="logo of trabook"></h4>
+                    
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Destination">Destination</a></li>
+                        <li><a href="#Tour">Tour</a></li>
+                        <li><a href="#Blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="nav-btns">
+                    <button id="login-btn">Login</button>
+                    <button id="signup-btn">Sign up</button>
+                </div>
+            </div>
+
+
+            <!-- hero part para tourist img -->
+            <div class="hero-part">
+                <div class="hero-content">
+                    <h2>Get started your exciting <span>journey</span> with us</h2>
+                    <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.</p>
+                    <button>Discover Now</button>
+                </div>
+                
+                <div class="hero-image">
+
+
+                    <div class="container">
+                        <svg width="500" height="100" viewBox="0 0 500 200">
+                            <!-- The curved path for the airplane to follow (can be invisible) -->
+                            <path id="flightPath" d="M10 190 Q 250 10 490 190" stroke="#ccc" fill="transparent" stroke-dasharray="5,5"/>
+                            
+                            <!-- The airplane image or element (initially positioned at the start) -->
+                            <image href="https://example.com/airplane.png" id="airplane" x="0" y="0" width="50" height="50"/>
+                        </svg>
+                    </div>
+
+                    <img src="./tourist-with-thumb-up.png" alt="tourist-with-thumb-up">
+                </div>
+            </div>
+
+            <div class="tourist-detail">
+                    <div class="loc-detl">
+                        <p class="para-head">Location<i class="fa-solid fa-angle-down"></i></p>
+                        <p class="para-sub">Where are you going</p>
+                    </div>
+                    <div class="date-detl">
+                        <p class="para-head">Date<i class="fa-solid fa-angle-down"></i></p>
+                        <p class="para-sub">When you will go</p>
+                    </div>
+                    <div class="gest-detl">
+                        <p class="para-head">Guest<i class="fa-solid fa-angle-down"></i></p>
+                        <p class="para-sub">Number of guest</p>
+                    </div>
+                    <div class="detl-btn">
+                        <button>Explore Now</button>
+                    </div>
+            </div>
+
+
+        </section>
+
+        <section class="pre-section">
+            <div class="pre-content">
+                <h2>Things you need <span>to do</span></h2>
+                <div class="para-width">
+
+                    <p>We ensure that you'll embark on a perfectly planned , safe vacation at a price you can afford</p>
+                </div>
+            </div>
+            <div class="pre-container">
+                <div class="pre-card">
+                    <img src="./signupIcon.svg" alt="">
+                    <h5>Sign Up</h5>
+                    <p>Completes all the work associated with planning and processing</p>
+                </div>
+                <div class="pre-card">
+                    <img src="./worldWallet.svg" alt="">
+                    <h5>Worth of Money</h5>
+                    <p>After successful access then book from exclusive deals & pricing</p>
+                </div>
+                <div class="pre-card">
+                    <img src="./excitingTravel.svg" alt="">
+                    <h5>Exciting Travel</h5>
+                    <p>Start and explore a wide range of exciting travel experience.</p>
+                </div>
+            </div>
+        </section>
+        <!-- exclusive deals and discounts section -->
+
+        <section class="deal-section">
+            <div class="deal-content">
+                <h2>Exclusive <span>deals & discounts</span></h2>
+                <p>Discover our fantastic early booking discounts & start planning your journey.</p>
+            </div>
+            <div class="deal-container">
+                <div class="deal-card">
+                    <img src="./madrid.png" alt="">
+                    <div class="title">
+                        <h5>Madrid</h5>
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                    </div>
+                    <div class="location">
+                        <p><i class="fa-solid fa-location-dot"></i>Spain</p>
+                        <p><span class="strike">$850</span><span class="dollar">$850</span></p>
+                        
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="deal-card">
+                    <img src="./firanze.png" alt="">
+                    <div class="title">
+                        <h5>Madrid</h5>
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                    </div>
+                    <div class="location">
+                        <p><i class="fa-solid fa-location-dot"></i>Spain</p>
+                        <p><span class="strike">$850</span><span class="dollar">$850</span></p>
+                        
+
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <img src="./london.png" alt="">
+                    <div class="title">
+                        <h5>Madrid</h5>
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                    </div>
+                    <div class="location">
+                        <p><i class="fa-solid fa-location-dot"></i>Spain</p>
+                        <p><span class="strike">$850</span><span class="dollar">$850</span></p>
+                        
+
+                    </div>
+                </div>
+                <div class="deal-card">
+                    <img src="./paris.png" alt="">
+                    <div class="title">
+                        <h5>Madrid</h5>
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                    </div>
+                    <div class="location">
+                        <p><i class="fa-solid fa-location-dot"></i>Spain</p>
+                        <p><span class="strike">$850</span><span class="dollar">$850</span></p>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="deal-arrow">
+                <i class="fa-regular fa-circle-left"></i>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+        </section>
+
+        <!-- best vacation plan section -->
+
+        <section class="deal-section">
+            <div class="deal-content">
+                <h2>Best <span>vacation plan</span></h2>
+                <p>Plan your perfect vacation with our travel agency.Choose among hundreds of all-inclusive offers!</p>
+            </div>
+
+            <div class="vac-arrow">
+                <i class="fa-regular fa-circle-left"></i>
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+
+            <div class="vac-container">
+                <div class="vac-card">
+                    <img src="./osaka.png" alt="">
+                    <div class="title">
+                        <h5>Rome,Italy</h5>
+                        <p><span class="dollar-big">$5,42k</span></p>
+                        
+                    </div>
+                    <div class="vac-location">
+                        <p><i class="fa-solid fa-location-arrow"></i> 10 days trip</p>
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                        
+
+                    </div>
+                    
+                    
+                </div>
+                <div class="vac-card">
+                    <img src="./ukLondon.png" alt="">
+                    <div class="title">
+                        <h5>London,UK</h5>
+                        <p><span class="dollar-big">$5,42k</span></p>
+                        
+                    </div>
+                    <div class="vac-location">
+                        <p><i class="fa-solid fa-location-arrow"></i> 10 days trip</p>
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                        
+
+                    </div>
+                </div>
+                <div class="vac-card">
+                    <img src="./osaka.png" alt="">
+                    <div class="title">
+                        <h5>Osaka,Japan</h5>
+                        <p><span class="dollar-big">$5,42k</span></p>
+                        
+                    </div>
+                    <div class="vac-location">
+                        <p><i class="fa-solid fa-location-arrow"></i> 10 days trip</p>
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                        
+
+                    </div>
+                </div>
+                
+            </div>
+
+            
+        </section>
+
+        <section class="secondHero-section">
+
+            <div class="hero-part">
+                <div class="secondHero-content">
+                    <h2>What people say <span> about us.</span></h2>
+                    <p>Our clients sends us bunch of smilies with our services and we love them.</p>
+                    <div class="secondHero-arrow">
+                        <i class="fa-regular fa-circle-left"></i>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="secondHero-image">
+
+
+                    <div class="card-container">
+                        <img src="./reviewPerson.png" alt="">
+                        <div class="card-top cards">
+
+                            <p>On the Windows talking painted pasture yet it's express parties use.Sure last upon he same as knew next.Of believed or diverted no.</p>
+                            <h6>Mike taylor</h6>
+                            <p>Lahore,Pakistan</p>
+                        </div>
+                        <div class="card-bottom cards">
+                            <p>On the Windows talking painted pasture yet it's express parties use.Sure last upon he same as knew next.Of believed or diverted no.</p>
+                            <h6>Chris Thomas</h6>
+                            <p>CEO of Red Button</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+
+
+        
+        </section>
+
+
+        <!-- get update with latest blog -->
+         <section class="deal-section">
+            <div class="deal-content">
+                <h2>Get update with<span>latest blog</span></h2>
+                
+            </div>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <img src="./blog1.png" alt="">
+                    
+                    <h6>The amazing difference a year of travelling</h6>
+                    <p>July 27,2021</p>
+                </div>
+                
+                <div class="blog-card">
+                    <img src="./blog2.png" alt="">
+                    
+                        <h6>The amazing difference a year of travelling</h6>
+                        <p>July 27,2021</p>
+                        
+                    
+                </div>
+                <div class="blog-card">
+                    <img src="./blog3.png" alt="">
+                    <h6>The amazing difference a year of travelling</h6>
+                    <p>July 27,2021</p>
+                    
+                </div>
+                <div class="blog-card">
+                    <img src="./blog4.png" alt="">
+                    <h6>The amazing difference a year of travelling</h6>
+                    <p>July 27,2021</p>
+                    
+                </div>
+            </div>
+
+            <div class="blog-points">
+                <i class="fa-solid fa-circle greye"></i>
+                <i class="fa-solid fa-circle orangee"></i>
+                <i class="fa-solid fa-circle greye"></i>
+            </div>
+        </section>
+
+        <footer class="footer-part">
+            
+            <div class="subscribe-form">
+                <h2>Subscribe and get exclusive deals & offer</h2>
+                <div class="form-bar">
+                    <i class="fa-regular fa-envelope"></i>
+                    <form action="#footer">
+                        <input type="email" placeholder="Enter your mail" >
+                    </form>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+            <div class="article-part">
+                <div class="article-content">
+                     <h4>Trabook  <img src="./logoVector.svg" alt="logo of trabook"></h4>
+                     <p>Book your trip in minute ,get full Control for much longer.</p>
+                     <div class="social-links">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram insta"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                     </div>
+                </div>
+                <div class="article-lists">
+                    
+                    <ul>
+                        <h6>Company</h6>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Logistic</li>
+                        <li>Privacy & Policy</li>
+                    </ul>
+                    
+                    <ul>
+                        <h6>Contact</h6>
+                        <li>Help/FAQ</li>
+                        <li>Press</li>
+                        <li>Affiliates</li>
+                    </ul>
+                    
+                    <ul>
+                        <h6>More</h6>
+                        <li>Press Centre</li>
+                        <li>Our Blog</li>
+                        <li>Low fare tips</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyrights">
+                <hr>
+                <div class="copy-cat">
+                    <p>Copyright,Trabook 2022.All rights reserved.</p>
+                    <p>Terms & Conditions</p>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>
+                    
+                    
+                    
+                    
+                        
+                    
+                        
+                    

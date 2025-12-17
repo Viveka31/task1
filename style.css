@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Volkhov", serif;
+    
+}
+body{
+    background-color: #f8f5f4;
+}
+
+/* overall body margin  */
+.trabook{
+    padding: 30px 200px;
+}
+/* logos links buttons separated */
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+/* link brought in single row */
+.nav-links ul{
+    display: flex;
+    gap: 20px;
+}
+/* anchor tag removed of underline */
+.nav-links a{
+    color: #222222;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+/* list removed of dots */
+.nav-links li{
+    list-style: none;
+}
+
+#login-btn{
+    color:#FD8D3A;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 30px;
+    font-size: 0.7rem;
+}
+#signup-btn{
+    background-color: #FA7436;
+    padding: 5px 30px;
+    font-size: 0.7rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.hero-part{
+    display: flex;
+}
+.hero-content{
+    padding: 120px 0px;
+    flex-basis: 40%;
+}
+.hero-content p{
+    padding: 30px 0px;
+    font-size: 0.5rem;
+    color: grey;
+    line-height: 25px;
+}
+span{
+    color:#FA7436;
+
+}
+.hero-content button{
+    padding: 10px 15px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    border: 2px solid #FD8D3A;
+    color: #FD8D3A;
+    background-color: white;
+}
+.hero-image{
+   padding: 0px 120px;
+
+}
+/* tourist detail bar */
+.tourist-detail{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 90vh;
+    margin: auto;
+    padding: 20px;
+}
+.para-head{
+    font-size: 0.6rem;
+}
+.para-head i{
+    color: #FA7436;
+}
+.para-sub{
+    font-size: 0.5rem;
+    margin-top: 5px;
+    color: grey;
+}
+.detl-btn button{
+    font-size: 0.7rem;
+    padding: 10px 15px;
+    background-color: #FA7436;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+/* things you need to do section */
+.pre-section{
+    margin :100px 0px;
+    background-color: #F7F8FC;
+    padding: 100px 0px;
+}
+.pre-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.pre-content p{
+    width:400px;
+    margin: auto;
+    color: grey;
+    font-size: 0.6rem;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.pre-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+.pre-card{
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+.pre-card img{
+    width: 40px;
+    padding-bottom: 40px;
+}
+.pre-card p{
+    color: grey;
+    font-size: 0.6rem;
+    line-height: 23px;
+    padding-top: 10px;
+
+}
+/* exclusive deals & discounts sections */
+
+.deal-section{
+    margin :100px 0px;
+    background-color: #F7F8FC;
+    padding: 100px 0px;
+}
+.deal-content{
+    
+    margin: auto;
+    text-align: center;
+    
+}
+
+.deal-content p{
+    width:400px;
+    margin: auto;
+    color: grey;
+    font-size: 0.6rem;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.deal-container{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 20px; */
+    margin-top: 50px;
+}
+.deal-card{
+    /* padding: 40px; */
+    width: 23%;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+}
+.deal-card img{
+   width: 100%;
+    /* padding-bottom: 40px; */
+}
+.deal-card p{
+    color: grey;
+    font-size: 0.6rem;
+    
+    padding-top: 10px;
+
+}
+
+/* flexing for cards */
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.fa-star{
+    color: #FFB60A;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.dollar{
+    background-color: #FFE7DB;
+    padding: 3px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.strike{
+    color: grey;
+    text-decoration: line-through;
+}
+/* arrow part coloring */
+.deal-arrow{
+    text-align: center;
+    margin: 50px;
+    font-size: 1.5rem;
+}
+.fa-circle-arrow-right{
+    color: #FA7436;
+}
+.fa-circle-left{
+    color: #acacac9a;
+    
+}
+
+/* best vacation plan section css */
+.vac-container{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    margin-top: 10px;
+}
+
+
+.vac-card{
+    /* padding: 40px; */
+    width: 31%;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+}
+.vac-card img{
+    width: 100%;
+}
+
+.vac-card p{
+    color: grey;
+    font-size: 0.6rem;
+    line-height: 23px;
+    /* padding-top: 10px; */
+
+}
+
+/* flexing for cards */
+
+
+
+.vac-location{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.fa-location-arrow{
+    color: #FA7436;
+}
+.dollar{
+    background-color: #FFE7DB;
+    padding: 3px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.strike{
+    color: grey;
+    text-decoration: line-through;
+}
+/* arrow part coloring */
+.vac-arrow{
+    text-align: end ;
+    /* margin: 50px; */
+    font-size: 1.3rem;
+}
+.dollar-big{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* second hero section review WHAT people say about us section */
+
+
+.secondHero-content{
+    flex-basis: 30%;
+}
+
+.secondHero-content p{
+    font-size: 0.6rem;
+    line-height: 20px;
+    color: grey;
+    padding: 20px 0px;
+}
+.secondHero-image{
+    flex-basis: 70%;
+    padding-top:0px ;
+    padding-bottom: 300px;
+}
+
+.secondHero-arrow{
+    font-size: 1.3rem;
+}
+
+/* review cards designing */
+.card-container{
+    
+    
+    position: relative;
+    padding-left: 200px;
+}
+
+.cards{
+    
+    background-color: white;
+    width: 380px;
+    height: 150px;
+    padding: 20px 40px 0px 40px;
+    border-radius: 5px;
+   /* font-size:0.7rem; */
+}
+.cards p{
+     font-size: 0.6rem;
+     color: rgb(111, 106, 106);
+     padding-bottom: 30px;
+     line-height: 20px;
+     /* padding-right: 20px; */
+}
+.card-top{
+    position:absolute;
+    top:40px;
+    z-index: -1;
+}
+.card-bottom{
+    opacity: 50%;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    z-index:-2;
+}
+.card-container img{
+   
+    position: relative;
+    left:-30px;
+    top: 0px;
+}
+
+/* blog section styling */
+.blog-container{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.blog-card{
+    width: 23%;
+}
+.blog-card img{
+    width: 100%;
+}
+.blog-card h6{
+    padding: 10px 10px 20px 0px;
+}
+.blog-card p{
+    font-size: 0.5rem;
+    color: grey;
+}
+.blog-points{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 60px;
+    font-size: 0.2rem;
+    margin: auto;
+}
+.greye{
+    color: #E5E5E5;
+    margin-right: 5px;
+    
+}
+.orangee{
+    color: #FA7436;
+    font-size: 0.5rem;
+}
+
+
+/* footer part styling */
+.subscribe-form{
+    background-color: #FA7436;
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+.subscribe-form h2{
+    width: 55%;
+    text-align: center;
+
+}
+
+.form-bar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.form-bar form{
+    flex:0.9;
+}
+.form-bar form input{
+    width: 100%;
+    
+    border: none;
+    color: rgb(106, 103, 103);
+}
+
+.form-bar i{
+    color: #C4C4C4;
+}
+
+.subscribe-form button{
+     background-color: #FA7436;
+     color: white;
+     padding: 5px;
+     border-radius: 5px;
+     border: none;
+}
+.footer-part{
+    height:800px;
+}
+
+/* article part styling */
+
+.article-part{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.article-content{
+    
+    flex-basis: 40%;
+}
+.article-content p{
+    width: 70%;
+    color: #666666;
+    padding: 20px 0px;
+    font-size: 0.6rem;
+    line-height: 20px;
+}
+.social-links i{
+    color: #444444;
+    background-color: white;
+    font-size: 0.6rem;
+    padding: 9px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+i.insta{
+    background-color: #FA7436;
+    color: white;
+}
+.article-lists{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+}
+.article-lists li{
+    list-style: none;
+    font-size: 0.6rem;
+    color: #666666;
+}
+.copy-cat{
+    display: flex;
+    justify-content: space-between;
+    color: #8c8a8a;
+    margin-top: 30px;
+    font-size: 0.6rem;
+}
