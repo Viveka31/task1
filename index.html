@@ -23,17 +23,21 @@
 
             <!-- nav bar justifying contents -->
             <div class="nav">
+
                 <div class="nav-logo">
                     <h4>Trabook  <img src="./logoVector.svg" alt="logo of trabook"></h4>
                     
                 </div>
+                <div class="nav-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Destination">Destination</a></li>
-                        <li><a href="#Tour">Tour</a></li>
-                        <li><a href="#Blog">Blog</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="#tour">Tour</a></li>
+                        <li><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
                 <div class="nav-btns">
@@ -44,7 +48,7 @@
 
 
             <!-- hero part para tourist img -->
-            <div class="hero-part">
+            <div class="hero-part" id="home">
                 <div class="hero-content">
                     <h2>Get started your exciting <span>journey</span> with us</h2>
                     <p>A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.</p>
@@ -53,18 +57,16 @@
                 
                 <div class="hero-image">
 
-
-                    <div class="container">
-                        <svg width="500" height="100" viewBox="0 0 500 200">
-                            <!-- The curved path for the airplane to follow (can be invisible) -->
-                            <path id="flightPath" d="M10 190 Q 250 10 490 190" stroke="#ccc" fill="transparent" stroke-dasharray="5,5"/>
-                            
-                            <!-- The airplane image or element (initially positioned at the start) -->
-                            <image href="https://example.com/airplane.png" id="airplane" x="0" y="0" width="50" height="50"/>
-                        </svg>
+                    <div class="tourist-image">
+                        <img src="./tourist.png" id="tourist1" alt="tourist-with-thumb-up">
+                        <img src="./touristPlane.png" id="tourist2" alt="">
+                        <img src="./touristCard1.png" id="tourist3" alt="">
+                        <img src="./touristCard2.png" id="tourist4" alt="">
+                        <img src="./testCard3.png" id="tourist5" alt="">
                     </div>
+                    
 
-                    <img src="./tourist-with-thumb-up.png" alt="tourist-with-thumb-up">
+                    
                 </div>
             </div>
 
@@ -89,8 +91,11 @@
 
         </section>
 
-        <section class="pre-section">
+        <!-- things you need to do section -->
+
+        <section class="pre-section" id="tour">
             <div class="pre-content">
+                <img src="./flyingIcon2.png" alt="">
                 <h2>Things you need <span>to do</span></h2>
                 <div class="para-width">
 
@@ -98,17 +103,17 @@
                 </div>
             </div>
             <div class="pre-container">
-                <div class="pre-card">
+                <div class="pre-card card-shadow">
                     <img src="./signupIcon.svg" alt="">
                     <h5>Sign Up</h5>
                     <p>Completes all the work associated with planning and processing</p>
                 </div>
-                <div class="pre-card">
+                <div class="pre-card card-shadow">
                     <img src="./worldWallet.svg" alt="">
                     <h5>Worth of Money</h5>
                     <p>After successful access then book from exclusive deals & pricing</p>
                 </div>
-                <div class="pre-card">
+                <div class="pre-card card-shadow">
                     <img src="./excitingTravel.svg" alt="">
                     <h5>Exciting Travel</h5>
                     <p>Start and explore a wide range of exciting travel experience.</p>
@@ -117,13 +122,13 @@
         </section>
         <!-- exclusive deals and discounts section -->
 
-        <section class="deal-section">
+        <section class="deal-section" id="about">
             <div class="deal-content">
                 <h2>Exclusive <span>deals & discounts</span></h2>
                 <p>Discover our fantastic early booking discounts & start planning your journey.</p>
             </div>
             <div class="deal-container">
-                <div class="deal-card">
+                <div class="deal-card card-shadow">
                     <img src="./madrid.png" alt="">
                     <div class="title">
                         <h5>Madrid</h5>
@@ -138,7 +143,7 @@
                     
                     
                 </div>
-                <div class="deal-card">
+                <div class="deal-card card-shadow">
                     <img src="./firanze.png" alt="">
                     <div class="title">
                         <h5>Madrid</h5>
@@ -151,7 +156,7 @@
 
                     </div>
                 </div>
-                <div class="deal-card">
+                <div class="deal-card card-shadow">
                     <img src="./london.png" alt="">
                     <div class="title">
                         <h5>Madrid</h5>
@@ -164,7 +169,7 @@
 
                     </div>
                 </div>
-                <div class="deal-card">
+                <div class="deal-card card-shadow">
                     <img src="./paris.png" alt="">
                     <div class="title">
                         <h5>Madrid</h5>
@@ -187,8 +192,9 @@
 
         <!-- best vacation plan section -->
 
-        <section class="deal-section">
-            <div class="deal-content">
+        <section class="deal-section" id="destination">
+            <div class="deal-content" id="treeContain">
+                <img src="./floatingImage3.png" id="tree0" alt="">
                 <h2>Best <span>vacation plan</span></h2>
                 <p>Plan your perfect vacation with our travel agency.Choose among hundreds of all-inclusive offers!</p>
             </div>
@@ -199,7 +205,7 @@
             </div>
 
             <div class="vac-container">
-                <div class="vac-card">
+                <div class="vac-card card-shadow">
                     <img src="./osaka.png" alt="">
                     <div class="title">
                         <h5>Rome,Italy</h5>
@@ -215,7 +221,7 @@
                     
                     
                 </div>
-                <div class="vac-card">
+                <div class="vac-card card-shadow">
                     <img src="./ukLondon.png" alt="">
                     <div class="title">
                         <h5>London,UK</h5>
@@ -229,7 +235,7 @@
 
                     </div>
                 </div>
-                <div class="vac-card">
+                <div class="vac-card card-shadow">
                     <img src="./osaka.png" alt="">
                     <div class="title">
                         <h5>Osaka,Japan</h5>
@@ -249,6 +255,8 @@
             
         </section>
 
+        <!-- what people say about us section -->
+
         <section class="secondHero-section">
 
             <div class="hero-part">
@@ -265,7 +273,8 @@
 
 
                     <div class="card-container">
-                        <img src="./reviewPerson.png" alt="">
+                        <img src="./flyingIcon5.png" id="planeReview" alt="">
+                        <img src="./reviewPerson.png" id="personReview" alt="">
                         <div class="card-top cards">
 
                             <p>On the Windows talking painted pasture yet it's express parties use.Sure last upon he same as knew next.Of believed or diverted no.</p>
@@ -291,20 +300,20 @@
 
 
         <!-- get update with latest blog -->
-         <section class="deal-section">
+         <section class="deal-section" id="blog">
             <div class="deal-content">
-                <h2>Get update with<span>latest blog</span></h2>
+                <h2>Get update with <span>latest blog</span></h2>
                 
             </div>
             <div class="blog-container">
-                <div class="blog-card">
+                <div class="blog-card card-shadow">
                     <img src="./blog1.png" alt="">
                     
                     <h6>The amazing difference a year of travelling</h6>
                     <p>July 27,2021</p>
                 </div>
                 
-                <div class="blog-card">
+                <div class="blog-card card-shadow">
                     <img src="./blog2.png" alt="">
                     
                         <h6>The amazing difference a year of travelling</h6>
@@ -312,13 +321,13 @@
                         
                     
                 </div>
-                <div class="blog-card">
+                <div class="blog-card card-shadow">
                     <img src="./blog3.png" alt="">
                     <h6>The amazing difference a year of travelling</h6>
                     <p>July 27,2021</p>
                     
                 </div>
-                <div class="blog-card">
+                <div class="blog-card card-shadow">
                     <img src="./blog4.png" alt="">
                     <h6>The amazing difference a year of travelling</h6>
                     <p>July 27,2021</p>
@@ -333,10 +342,12 @@
             </div>
         </section>
 
+        <!-- footer section subscribe form -->
         <footer class="footer-part">
             
             <div class="subscribe-form">
-                <h2>Subscribe and get exclusive deals & offer</h2>
+                <img src="./floatingImage3.png" id="tree" alt="">
+                <h3>Subscribe and get exclusive deals & offer</h3>
                 <div class="form-bar">
                     <i class="fa-regular fa-envelope"></i>
                     <form action="#footer">
@@ -344,6 +355,7 @@
                     </form>
                     <button>Subscribe</button>
                 </div>
+                <img src="./floatingImage4.png" id="rings" alt="">
             </div>
 
             <div class="article-part">
@@ -354,6 +366,7 @@
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-instagram insta"></i>
                         <i class="fa-brands fa-twitter"></i>
+                        
                      </div>
                 </div>
                 <div class="article-lists">

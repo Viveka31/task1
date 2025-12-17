@@ -17,6 +17,9 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.nav-menu{
+    display: none;
+}
 /* link brought in single row */
 .nav-links ul{
     display: flex;
@@ -32,6 +35,9 @@ body{
 .nav-links li{
     list-style: none;
 }
+.nav-links li a:hover{
+    color: green;
+}
 
 #login-btn{
     color:#FD8D3A;
@@ -41,6 +47,10 @@ body{
     padding: 5px 30px;
     font-size: 0.7rem;
 }
+#login-btn:hover{
+    color: white;
+    background-color: green;
+}
 #signup-btn{
     background-color: #FA7436;
     padding: 5px 30px;
@@ -48,6 +58,10 @@ body{
     color: white;
     border-radius: 5px;
     border: none;
+}
+#signup-btn:hover{
+    background-color: skyblue;
+    color: green;
 }
 .hero-part{
     display: flex;
@@ -78,10 +92,58 @@ span{
     color: #FD8D3A;
     background-color: white;
 }
-.hero-image{
-   /* padding: 0px 120px; */
-   width: 50%;
-    flex-basis: 50%;
+.hero-content button:hover{
+    color: white;
+    background-color: #FD8D3A;
+}
+
+.tourist-image{
+   
+    position: relative;
+   padding: 100px 0px;
+
+   
+}
+
+#tourist1{
+    position: absolute;
+   height: 350px;
+   z-index: -1;
+}
+#tourist2{
+    z-index: -2;
+    position: absolute;
+    left: -80px;
+    top: 10px;
+    height: 120px;
+    width: 500px;
+    /* background-color: skyblue; */
+} 
+#tourist3{
+    position: absolute;
+    top:120px;
+    left:-110px;
+    height: 100px;
+    width:200px;
+}
+#tourist4{
+    position: absolute;
+    top: 220px;
+    left: 190px;
+    height: 100px;
+    width:200px;
+}
+#tourist5{
+    position: absolute;
+    top: 300px;
+    left: -70px;
+    height: 100px;
+    width:200px;
+}
+
+.hero-image img{
+    position: absolute;
+    height: 400px;
 }
 /* tourist detail bar */
 .tourist-detail{
@@ -99,7 +161,7 @@ span{
     color: #FA7436;
 }
 .para-sub{
-    font-size: 0.5rem;
+    font-size: 0.3rem;
     margin-top: 5px;
     color: grey;
 }
@@ -111,6 +173,10 @@ span{
     border-radius: 5px;
     border: none;
 }
+.detl-btn button:hover{
+    color: white;
+    background-color: green;
+}
 /* things you need to do section */
 .pre-section{
     margin :100px 0px;
@@ -121,7 +187,12 @@ span{
     width: 50%;
     margin: auto;
     text-align: center;
-    
+    position: relative;
+}
+.pre-content img{
+    position: absolute;
+    left: 400px;
+    width: 120px;
 }
 
 .pre-content p{
@@ -165,7 +236,12 @@ span{
     
     margin: auto;
     text-align: center;
-    
+    position: relative;
+}
+.deal-content img{
+    position: absolute;
+    width: 100px;
+    left: 800px;
 }
 
 .deal-content p{
@@ -271,7 +347,14 @@ span{
 
 /* flexing for cards */
 
-
+#treeContain{
+    position: relative;
+}
+#tree0{
+    position: absolute;
+    left: 600px;
+    width: 80px;
+}
 
 .vac-location{
     display: flex;
@@ -316,9 +399,11 @@ span{
     padding: 20px 0px;
 }
 .secondHero-image{
-    flex-basis: 70%;
+    /* flex-basis: 50%; */
     padding-top:0px ;
     padding-bottom: 300px;
+    
+    
 }
 
 .secondHero-arrow{
@@ -330,22 +415,25 @@ span{
     
     
     position: relative;
-    padding-left: 200px;
+    padding-left: 120px;
 }
 
 .cards{
     
     background-color: white;
-    width: 380px;
-    height: 150px;
-    padding: 20px 40px 0px 40px;
+    width: 300px;
+    height: 120px;
+    padding: 20px 20px 10px 20px;
     border-radius: 5px;
    /* font-size:0.7rem; */
 }
+.cards h6{
+    font-size: 0.5rem;
+}
 .cards p{
-     font-size: 0.6rem;
+     font-size: 0.4rem;
      color: rgb(111, 106, 106);
-     padding-bottom: 30px;
+     padding-bottom: 20px;
      line-height: 20px;
      /* padding-right: 20px; */
 }
@@ -357,18 +445,24 @@ span{
 .card-bottom{
     opacity: 50%;
     position: absolute;
-    left: 250px;
+    left: 150px;
     top: 100px;
     z-index:-2;
 }
-.card-container img{
-   
-    position: relative;
-    left:-30px;
-    top: 0px;
+#personReview{
+    position: absolute;
+    left:80px;
+
+}
+#planeReview{
+    position:absolute;
+    left: 450px;
+    width: 100px;
+    
 }
 
-/* blog section styling */
+
+/* get update with latest block section styling */
 .blog-container{
     padding-top: 70px;
     display: flex;
@@ -381,11 +475,13 @@ span{
     width: 100%;
 }
 .blog-card h6{
-    padding: 10px 10px 20px 0px;
+    padding: 10px 10px 20px 10px;
 }
 .blog-card p{
     font-size: 0.5rem;
     color: grey;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 .blog-points{
     padding-top: 40px;
@@ -409,7 +505,7 @@ span{
 /* footer part styling */
 .subscribe-form{
     background-color: #FA7436;
-    height: 45%;
+    height: 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -417,35 +513,58 @@ span{
     align-items: center;
     color: white;
     border-radius: 10px;
+    position: relative;
+    /* z-index: -2; */
 }
-.subscribe-form h2{
-    width: 55%;
+#tree{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
+}
+#rings{
+    position: absolute;
+    left: 5px;
+    /* z-index: -1; */
+    width: 450px;
+}
+.subscribe-form h3{
+    width: 58%;
     text-align: center;
 
 }
 
 .form-bar{
+    position: absolute;
+    z-index: 1;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
-    height: 50px;
+    width: 58%;
+    height: 40px;
     margin-top: 50px;
     border-radius: 5px;
 }
 .form-bar form{
     flex:0.9;
 }
+form:hover{
+    border: none;
+}
 .form-bar form input{
     width: 100%;
     
-    border: none;
+    border: 1px solid grey;
     color: rgb(106, 103, 103);
+    font-size: 0.6rem;
 }
+
 
 .form-bar i{
     color: #C4C4C4;
+    font-size: 0.8rem;
+
 }
 
 .subscribe-form button{
@@ -454,6 +573,8 @@ span{
      padding: 5px;
      border-radius: 5px;
      border: none;
+     
+     font-size: 0.5rem;
 }
 .footer-part{
     height:800px;
@@ -486,9 +607,20 @@ span{
     margin-right: 10px;
     border-radius: 50%;
 }
+
 i.insta{
     background-color: #FA7436;
     color: white;
+}
+i.insta:hover{
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+.fa-facebook-f:hover{
+    background-color: #0064e0;
+    color: white;
+}
+.fa-twitter:hover{
+    color:  #1DA1F2;
 }
 .article-lists{
     flex-basis: 60%;
@@ -507,4 +639,108 @@ i.insta{
     color: #8c8a8a;
     margin-top: 30px;
     font-size: 0.6rem;
+}
+/* card shadow adding */
+.card-shadow{
+    box-shadow:  1px 1px 2px  rgb(222, 218, 218),-1px -1px 2px rgb(222, 218, 218);
+}
+.card-shadow:hover{
+    box-shadow:  2px 2px 5px  rgb(158, 155, 155),-2px -2px 5px rgb(158, 155, 155);
+}
+
+/* media query for nav pattern */
+
+@media screen and (max-width: 600px){
+ 
+    .trabook{
+        padding:20px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-btns{
+        display:none;
+    }
+    .nav{
+    position: relative;
+
+}
+    .nav-menu{
+        display: flex;
+        position: absolute;
+        right: 0px;
+    }
+
+    .hero-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-content{
+        width: 100%;
+        padding:50px 0px 10px 0px;
+    }
+    .hero-image{
+        height: 300px;
+        width: 60%;
+        padding:10px ;
+    }
+    .tourist-detail{
+        margin-top: 150px;
+        margin-left: 0px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+       
+    }
+    .pre-section{
+        padding: 0px;
+    }
+    .pre-content{
+        width: 100%;
+    }
+    .pre-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .deal-section{
+        margin-top: 0px;
+    }
+    .deal-container{
+       
+        flex-wrap:wrap;
+    }
+    .deal-card{
+        width: 60%;
+        
+        margin: 10px auto;
+    }
+    .vac-container{
+        flex-direction: column;
+        
+    }
+    .vac-card{
+        width: 60%;
+        margin: 10px auto;
+    }
+    .blog-container{
+        flex-direction: column;
+    }
+    .blog-card{
+        width: 60%;
+        margin: 10px auto;
+    }
+    .article-part{
+        flex-direction: column;
+    }
+    .article-content{
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+    .card-container{
+        margin-top: 20px;
+        left: -170px;
+        /* width: 300px; */
+    }
+    
 }
