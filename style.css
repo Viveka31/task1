@@ -683,6 +683,7 @@ i.insta:hover{
         height: 300px;
         width: 60%;
         padding:10px ;
+        padding-left: 50px;
     }
     .tourist-detail{
         margin-top: 150px;
@@ -712,8 +713,12 @@ i.insta:hover{
     }
     .deal-card{
         width: 60%;
+        height: 450px;
         
         margin: 10px auto;
+    }
+    #tree0{
+        left: 400px;
     }
     .vac-container{
         flex-direction: column;
@@ -739,8 +744,24 @@ i.insta:hover{
     }
     .card-container{
         margin-top: 20px;
-        left: -170px;
+        left: -50px;
         /* width: 300px; */
     }
+    .subscribe-form h3{
+        /* padding-top: 0px; */
+        padding-bottom: 80px;
+    }
+    .form-bar{
+        margin-top: 90px;
+    }
+
+    /* card shadow adding */
+    .card-shadow{
+        box-shadow:  1px 1px 2px  rgb(222, 218, 218),-1px -1px 2px rgb(222, 218, 218);
+    }
+    .card-shadow:hover{
+        box-shadow:  2px 2px 5px  rgb(158, 155, 155),-2px -2px 5px rgb(158, 155, 155);
+    }
+
     
 }
